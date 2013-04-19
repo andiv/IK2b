@@ -1141,14 +1141,6 @@ status open
 fancyhead[R]{License}
 \end_layout
 
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{page}{2} % sonst gibt es aus irgendeinem Grund zweimal die Seite
- 1!?!?!?
-\end_layout
-
 \end_inset
 
 
@@ -1202,8 +1194,7 @@ with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
 \end_layout
 
 \begin_layout Standard
-A copy of the license is included in the section entitled “GNU Free Documentatio
-n License”.
+A copy of the license is included in the document entitled “GFDL”.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -3897,7 +3888,7 @@ r & =\left(n_{1},n_{2},\ldots,n_{f}\right)
 \emph on
 Note
 \emph default
-: We assumed here that the closed system is restricted to a finite Volume
+: We assumed here that the closed system is restricted to a finite volume
  
 \begin_inset Formula $V$
 \end_inset
@@ -9313,7 +9304,7 @@ Example
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\KET{\vec{r}_{1}\vec{r}_{2}\ldots\vec{r}_{N}|\psi} & =\sum_{\nu_{1},\ldots,\nu_{N}}A_{\nu_{1},\ldots,\nu_{N}}\psi_{\nu_{1}}\left(\vec{r}_{1}\right)\ldots\psi_{\nu_{N}}\left(\vec{r}_{N}\right)
+\BraKet{\vec{r}_{1}\vec{r}_{2}\ldots\vec{r}_{N}|\psi} & =\sum_{\nu_{1},\ldots,\nu_{N}}A_{\nu_{1},\ldots,\nu_{N}}\psi_{\nu_{1}}\left(\vec{r}_{1}\right)\ldots\psi_{\nu_{N}}\left(\vec{r}_{N}\right)
 \end{align}
 
 \end_inset
@@ -9338,7 +9329,7 @@ Here
 \begin_inset Formula $\abs ._{-}$
 \end_inset
 
- the normal determinant (slater determinant).
+ the normal determinant (Slater determinant).
  Moreover the normalization factor is:
 \begin_inset Formula 
 \begin{align}
@@ -9905,7 +9896,7 @@ To this second class belong e.g.
 \begin_inset Formula $r$
 \end_inset
 
- is independent on 
+ is independent of 
 \begin_inset Formula $N$
 \end_inset
 
@@ -10273,7 +10264,7 @@ highest occupied level
 \end_layout
 
 \begin_layout Itemize
-For a gapped structure (semi conductor), 
+For a gapped structure (semiconductor), 
 \begin_inset Formula $\varepsilon_{F}=\mu\left(T=0\right)$
 \end_inset
 
@@ -11115,6 +11106,10 @@ The
 
 \begin_layout Plain Layout
 Metal
+\begin_inset Formula $\vphantom{\bigg|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11138,6 +11133,10 @@ Metal
 
 \begin_layout Plain Layout
 Li
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11158,6 +11157,10 @@ Li
 
 \begin_layout Plain Layout
 Na
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11178,6 +11181,10 @@ Na
 
 \begin_layout Plain Layout
 K
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11198,6 +11205,10 @@ K
 
 \begin_layout Plain Layout
 Rb
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11218,6 +11229,10 @@ Rb
 
 \begin_layout Plain Layout
 Cs
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11238,6 +11253,10 @@ Cs
 
 \begin_layout Plain Layout
 Cu
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11258,6 +11277,10 @@ Cu
 
 \begin_layout Plain Layout
 Ag
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11278,6 +11301,10 @@ Ag
 
 \begin_layout Plain Layout
 Au
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -13484,7 +13511,7 @@ reference "eq:electron-equation"
  We then solve the problem only described by:
 \begin_inset Formula 
 \begin{align}
-\hat{H} & =\hat{T}_{\text{el}}+\hat{V}_{\text{ei}}=\sum_{i=1}^{N}\frac{\hat{p}_{i}^{2}}{2m}-\sum_{i=1}^{N}\sum_{\alpha}\frac{Z_{\alpha e^{2}}}{\abs{\vec{r}_{i}-\vec{R}_{0,\alpha}}}=\nonumber \\
+\hat{H} & =\hat{T}_{\text{el}}+\hat{V}_{\text{ei}}=\sum_{i=1}^{N}\frac{\hat{p}_{i}^{2}}{2m}-\sum_{i=1}^{N}\sum_{\alpha}\frac{Z_{\alpha}e^{2}}{\abs{\vec{r}_{i}-\vec{R}_{0,\alpha}}}=\nonumber \\
  & =\sum_{i=1}^{N}\underbrace{\left(\frac{\hat{p}_{i}^{2}}{2m}+v\left(\vec{r}_{i}\right)\right)}_{=:\hat{h}_{i}}
 \end{align}
 
@@ -13493,7 +13520,7 @@ reference "eq:electron-equation"
 Here we define:
 \begin_inset Formula 
 \begin{align}
-v\left(\vec{r}_{i}\right) & :=-\sum_{\alpha}\frac{Z_{\alpha e^{2}}}{\abs{\vec{r}_{i}-\vec{R}_{0,\alpha}}}
+v\left(\vec{r}_{i}\right) & :=-\sum_{\alpha}\frac{Z_{\alpha}e^{2}}{\abs{\vec{r}_{i}-\vec{R}_{0,\alpha}}}
 \end{align}
 
 \end_inset
@@ -15887,6 +15914,10 @@ _{1}\BraKet{p_{x}|\hat{v}_{\text{atom}}|p_{y}}_{2} & =V_{pp\sigma}\cos^{2}\Theta
 \end_inset
 
 we get the LCAO matrix:
+\begin_inset VSpace -7mm
+\end_inset
+
+
 \begin_inset Formula 
 \begin{align*}
 \mathcal{H} & =\begin{array}{c}
@@ -16494,6 +16525,10 @@ Noble metals
 
 \begin_layout Plain Layout
 (body-centered cubic)
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -16515,6 +16550,10 @@ Noble metals
 \begin_layout Plain Layout
 Li: 
 \begin_inset Formula $\left[\text{He}\right]2s^{1}$
+\end_inset
+
+
+\begin_inset Formula $\vphantom{\Big|}$
 \end_inset
 
 
@@ -16542,6 +16581,10 @@ Na:
 \end_inset
 
 
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -16563,6 +16606,10 @@ Na:
 \begin_layout Plain Layout
 K: 
 \begin_inset Formula $\left[\text{Ar}\right]4s^{1}$
+\end_inset
+
+
+\begin_inset Formula $\vphantom{\Big|}$
 \end_inset
 
 
@@ -16594,6 +16641,10 @@ Rb:
 \end_inset
 
 
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -16619,6 +16670,10 @@ Ag:
 \begin_layout Plain Layout
 Cs: 
 \begin_inset Formula $\left[\text{Xe}\right]6s^{1}$
+\end_inset
+
+
+\begin_inset Formula $\vphantom{\Big|}$
 \end_inset
 
 
@@ -17749,7 +17804,7 @@ Example: Density operator
 In the position representation we get:
 \begin_inset Formula 
 \begin{align*}
-\varrho_{\text{tot}}\left(\vec{r}\right) & =\hat{a}^{\dagger}\left(\vec{r}\right)\hat{a}\left(\vec{r}\right)
+\hat{\varrho}_{\text{tot}}\left(\vec{r}\right) & =\hat{a}^{\dagger}\left(\vec{r}\right)\hat{a}\left(\vec{r}\right)
 \end{align*}
 
 \end_inset
@@ -17757,7 +17812,7 @@ In the position representation we get:
 In the momentum representation this gives:
 \begin_inset Formula 
 \begin{align*}
-\varrho_{\text{tot}}\left(\vec{k}\right) & =\frac{1}{V}\sum_{\vec{k},\vec{q}}e^{\ii\vec{q}\cdot\vec{r}}\hat{a}_{\vec{k}}^{\dagger}\hat{a}_{\vec{k}+\vec{q}}
+\hat{\varrho}_{\text{tot}}\left(\vec{k}\right) & =\frac{1}{V}\sum_{\vec{k},\vec{q}}e^{\ii\vec{q}\cdot\vec{r}}\hat{a}_{\vec{k}}^{\dagger}\hat{a}_{\vec{k}+\vec{q}}
 \end{align*}
 
 \end_inset
@@ -18197,17 +18252,7 @@ Ashcroft
 \noun on
 Mermin
 \noun default
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: CHAPTER In which chapter, on which page?
-\end_layout
-
-\end_inset
-
-):
+, Table 1.1):
 \begin_inset Formula 
 \begin{align*}
 r_{s} & :=\frac{r_{0}}{a_{0}}=\frac{r_{0}}{\hbar^{2}m^{-1}e^{-2}}=\frac{e^{2}}{r_{0}}\cdot\frac{mr_{0}^{2}}{\hbar^{2}}\approx\frac{\varepsilon_{\text{pot}}}{\varepsilon_{\text{kin}}}
@@ -18240,6 +18285,10 @@ r_{s} & :=\frac{r_{0}}{a_{0}}=\frac{r_{0}}{\hbar^{2}m^{-1}e^{-2}}=\frac{e^{2}}{r
 
 \begin_layout Plain Layout
 Metal
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -18263,6 +18312,10 @@ Metal
 
 \begin_layout Plain Layout
 Li
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -18271,10 +18324,7 @@ Li
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $3,2$
-\end_inset
-
-
+3,3
 \end_layout
 
 \end_inset
@@ -18286,6 +18336,10 @@ Li
 
 \begin_layout Plain Layout
 Na
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -18294,10 +18348,7 @@ Na
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $3,9$
-\end_inset
-
-
+3,9
 \end_layout
 
 \end_inset
@@ -18309,6 +18360,10 @@ Na
 
 \begin_layout Plain Layout
 K
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -18317,10 +18372,7 @@ K
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $4,9$
-\end_inset
-
-
+4,9
 \end_layout
 
 \end_inset
@@ -18332,6 +18384,10 @@ K
 
 \begin_layout Plain Layout
 Cu
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -18340,10 +18396,7 @@ Cu
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $2,7$
-\end_inset
-
-
+2,7
 \end_layout
 
 \end_inset
@@ -18355,6 +18408,10 @@ Cu
 
 \begin_layout Plain Layout
 Be
+\begin_inset Formula $\vphantom{\Big|}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -18363,10 +18420,7 @@ Be
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1,9$
-\end_inset
-
-
+1,9
 \end_layout
 
 \end_inset
@@ -18437,7 +18491,7 @@ Here
 
 \end_inset
 
-x Hence we get:
+Hence we get:
 \begin_inset Formula 
 \begin{align*}
 E^{\left(0\right)} & =\BraKet{\text{FS}|\sum_{\vec{k},\sigma}\frac{\hbar^{2}}{2m}k^{2}\hat{n}_{\vec{k},\sigma}|\text{FS}}
@@ -18561,17 +18615,7 @@ Bruus
 \noun on
 Flensberg
 \noun default
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: CHAPTER
-\end_layout
-
-\end_inset
-
-)
+, section 2.2.1)
 \end_layout
 
 \begin_layout Standard
@@ -18686,7 +18730,7 @@ The intermediate states
 \end_layout
 
 \begin_layout Enumerate
-Exited electrons must be put back in the holes left behind.
+Excited electrons must be put back in the holes left behind.
 \end_layout
 
 \begin_layout Standard
@@ -20324,7 +20368,7 @@ We consider
 \begin_inset Formula 
 \begin{align*}
 \ii\hbar\partial_{t}\tilde{\chi}^{R}\left(\vec{q,}\vec{k},\sigma,t-t'\right) & =\delta\left(t-t'\right)\left\langle \left[\left(\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}\right)\left(t\right),\hat{\varrho}_{I}\left(-\vec{q},t'\right)\right]\right\rangle _{0}+\\
- & \qquad+\left(\frac{-\ii}{\hbar}\Theta\left(t-t'\right)\right)\left(\frac{-\hbar}{\ii}\right)\left\langle \frac{\ii}{\hbar}\left[\hat{H},\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q}}\right],\hat{\varrho}_{I}\left(-\vec{q},t'\right)\right\rangle _{0}
+ & \qquad+\left(\frac{-\ii}{\hbar}\Theta\left(t-t'\right)\right)\left(\frac{-\hbar}{\ii}\right)\left\langle \frac{\ii}{\hbar}\left[\hat{H},\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}\right],\hat{\varrho}_{I}\left(-\vec{q},t'\right)\right\rangle _{0}
 \end{align*}
 
 \end_inset
@@ -20340,7 +20384,7 @@ Remember:
 For the first commutator we obtain:
 \begin_inset Formula 
 \begin{align*}
-\left[\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q}},\hat{\varrho}\left(-\vec{q}\right)\right] & =\sum_{\vec{k}',\sigma'}\left[\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma},\hat{c}_{\vec{k}',\sigma'}^{\dagger}\hat{c}_{\vec{k}'-\vec{q},\sigma'}\right]=\\
+\left[\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma},\hat{\varrho}\left(-\vec{q}\right)\right] & =\sum_{\vec{k}',\sigma'}\left[\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma},\hat{c}_{\vec{k}',\sigma'}^{\dagger}\hat{c}_{\vec{k}'-\vec{q},\sigma'}\right]=\\
  & =\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k},\sigma}-\hat{c}_{\vec{k}+\vec{q},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}=\left(\hat{n}_{\vec{k},\sigma}-\hat{n}_{\vec{k}+\vec{q},\sigma}\right)
 \end{align*}
 
@@ -20349,7 +20393,7 @@ For the first commutator we obtain:
 
 \begin_inset Formula 
 \begin{align*}
-\left[\hat{H}_{0},\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q}}\right] & =\left(\varepsilon_{\vec{k}}-\varepsilon_{\vec{k}+\vec{q}}\right)\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}
+\left[\hat{H}_{0},\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}\right] & =\left(\varepsilon_{\vec{k}}-\varepsilon_{\vec{k}+\vec{q}}\right)\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}
 \end{align*}
 
 \end_inset
@@ -20358,7 +20402,7 @@ For the first commutator we obtain:
 \begin_inset Formula 
 \begin{align*}
 \left[\hat{V}_{ee}^{\text{jellium}},\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}\right] & =-\frac{1}{2V}\sum_{\vec{k}',\vec{q}'\not=0,\sigma'}\tilde{v}_{ee}\left(q\right)\bigg(\hat{c}_{\vec{k}+\vec{q}',\sigma}^{\dagger}\hat{c}_{\vec{k}'-\vec{q}',\sigma'}^{\dagger}\hat{c}_{\vec{k}',\sigma'}\hat{c}_{\vec{k}+\vec{q},\sigma}+\\
- & \qquad+\hat{c}_{\vec{k}'+\vec{q}',\sigma'}^{\dagger}\hat{c}_{\vec{k}-\vec{q}',\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}\hat{c}_{\vec{k}',\sigma'}-\hat{c}_{\vec{k}'+\vec{q}',\sigma'}^{\dagger}\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q}-\vec{q}',\sigma}\hat{c}_{\vec{k}',\sigma'}-\\
+ & \qquad+\hat{c}_{\vec{k}'+\vec{q}',\sigma'}^{\dagger}\hat{c}_{\vec{k}-\vec{q}',\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}\hat{c}_{\vec{k}',\sigma'}-\hat{c}_{\vec{k}'+\vec{q}',\sigma'}^{\dagger}\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q}+\vec{q}',\sigma}\hat{c}_{\vec{k}',\sigma'}-\\
  & \qquad-\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}'-\vec{q}',\sigma'}^{\dagger}\hat{c}_{\vec{k}',\sigma'}\hat{c}_{\vec{k}+\vec{q}-\vec{q}',\sigma}\bigg)
 \end{align*}
 
@@ -20431,20 +20475,20 @@ Let us take the Fourier transformation:
 
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: Rest It should be (different sign):
+Somewhere happen an error, because this should have a different sign:
 \begin_inset Formula 
 \begin{align*}
-\frac{f\left(\varepsilon_{\vec{k}}\right)-f\left(\varepsilon_{\vec{k}+\vec{q}}\right)}{1+\frac{\tilde{v}_{ee}\left(q\right)}{V}\sum_{\vec{k}',\sigma'}\tilde{\chi}\left(\vec{q},\vec{k}',\sigma',\omega\right)}
+\left(\hbar\omega+\ii\eta+\varepsilon_{\vec{k}}-\varepsilon_{\vec{k}+\vec{q}}\right)\tilde{\chi}^{R}\left(\vec{q},\vec{k},\sigma,\omega\right) & =\frac{f\left(\varepsilon_{\vec{k}}\right)-f\left(\varepsilon_{\vec{k}+\vec{q}}\right)}{1+\frac{\tilde{v}_{ee}\left(q\right)}{V}\sum_{\vec{k}',\sigma'}\tilde{\chi}\left(\vec{q},\vec{k}',\sigma',\omega\right)}
 \end{align*}
 
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: Rest Wrong sign!
 \end_layout
 
 \end_inset
@@ -20452,7 +20496,7 @@ TODO: Rest It should be (different sign):
 
 \begin_inset Formula 
 \begin{align*}
-\Rightarrow\qquad\tilde{\chi}^{R}\left(\vec{q},\vec{k},\sigma,\omega\right) & =\frac{f\left(\varepsilon_{\vec{k}}\right)-f\left(\varepsilon_{\vec{k}+\vec{q}}\right)}{\hbar\omega+\ii\eta+\varepsilon_{\vec{k}}-\varepsilon_{\vec{k}+\vec{q}}}\left(1-\left(+\right)\frac{\tilde{v}_{ee}\left(q\right)}{V}\sum_{\vec{k}',\sigma'}\tilde{\chi}\left(\vec{q},\vec{k}',\sigma',\omega\right)\right)
+\Rightarrow\qquad\tilde{\chi}^{R}\left(\vec{q},\vec{k},\sigma,\omega\right) & =\frac{f\left(\varepsilon_{\vec{k}}\right)-f\left(\varepsilon_{\vec{k}+\vec{q}}\right)}{\hbar\omega+\ii\eta+\varepsilon_{\vec{k}}-\varepsilon_{\vec{k}+\vec{q}}}\left(1-\frac{\tilde{v}_{ee}\left(q\right)}{V}\sum_{\vec{k}',\sigma'}\tilde{\chi}\left(\vec{q},\vec{k}',\sigma',\omega\right)\right)
 \end{align*}
 
 \end_inset
@@ -20468,7 +20512,7 @@ Remember:
 
 \begin_inset Formula 
 \begin{align*}
-\Rightarrow\qquad\tilde{\chi}^{R}\left(\vec{q},\omega\right) & =\tilde{\chi}_{0}\left(1-\left(+\right)\tilde{u}_{ee}\left(q\right)\tilde{\chi}^{R}\left(\vec{q},\omega\right)\right)
+\Rightarrow\qquad\tilde{\chi}^{R}\left(\vec{q},\omega\right) & =\tilde{\chi}_{0}\left(1-\tilde{u}_{ee}\left(q\right)\tilde{\chi}^{R}\left(\vec{q},\omega\right)\right)
 \end{align*}
 
 \end_inset
@@ -20476,7 +20520,7 @@ Remember:
 
 \begin_inset Formula 
 \begin{align*}
-\Rightarrow\qquad\tilde{\chi}^{R}\left(\vec{q},\omega\right) & =\frac{\tilde{\chi}_{0}}{1+\left(-\right)\tilde{u}_{ee}\left(q\right)\tilde{\chi}_{0}}=:\tilde{\chi}_{\text{RPA}}\left(\vec{q},\omega\right)
+\Rightarrow\qquad\tilde{\chi}^{R}\left(\vec{q},\omega\right) & =\frac{\tilde{\chi}_{0}}{1+\tilde{u}_{ee}\left(q\right)\tilde{\chi}_{0}}=:\tilde{\chi}_{\text{RPA}}\left(\vec{q},\omega\right)
 \end{align*}
 
 \end_inset
@@ -20520,17 +20564,7 @@ We hence have screening.
 \noun on
 Flensberg
 \noun default
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: CHAPTER
-\end_layout
-
-\end_inset
-
-)
+, section 9.3)
 \begin_inset Formula 
 \begin{align*}
 \lim_{\vec{q}\to0}\tilde{\chi}_{0}\left(\vec{q},\omega\right) & =-e^{2}\mathcal{D}\left(\varepsilon_{F}\right)
@@ -20722,7 +20756,7 @@ classical
  equations of motion for the displacements read:
 \begin_inset Formula 
 \begin{align*}
-M\ddot{\vec{U_{j}}}\left(t\right) & =-\frac{\partial V_{ii}}{\partial\vec{u}_{j}}=-\sum_{l}\frac{\partial}{\partial\vec{u}_{j}}v_{ii}\left(\vec{R_{l}}-\vec{R_{j}}\right)
+M\ddot{\vec{u_{j}}}\left(t\right) & =-\frac{\partial V_{ii}}{\partial\vec{u}_{j}}=-\sum_{l}\frac{\partial}{\partial\vec{u}_{j}}v_{ii}\left(\vec{R_{l}}-\vec{R_{j}}\right)
 \end{align*}
 
 \end_inset
@@ -21019,11 +21053,12 @@ How to quantize?
 \begin_inset Newline newline
 \end_inset
 
-We introduce (bosonic) creation and annihilation operators, such that holds:
+We introduce (bosonic) creation and annihilation operators, such that the
+ following holds:
 \begin_inset Formula 
 \begin{align}
 \begin{array}{c}
-{\displaystyle \hat{\vec{U}}_{\vec{k},l}=l_{\vec{k},\lambda}\frac{1}{\sqrt{2}}\left(\hat{b}_{-\vec{k},\lambda}^{\dagger}+\hat{b}_{\vec{k},\lambda}\right)\vec{\epsilon}_{\vec{k},\lambda}}\\
+{\displaystyle \hat{\vec{U}}_{\vec{k},l}=l_{\vec{k},\lambda}\frac{1}{\sqrt{2}}\left(\hat{b}_{-\vec{k},\lambda}^{\dagger}+\hat{b}_{\vec{k},\lambda}\right)\vec{\epsilon}_{\vec{k},\lambda}}\ \ \ \\
 {\displaystyle \hat{\vec{P}}_{\vec{k},l}=\frac{\hbar}{l_{\vec{k},\lambda}}\cdot\frac{\ii}{\sqrt{2}}\left(\hat{b}_{-\vec{k},\lambda}-\hat{b}_{\vec{k},\lambda}\right)\vec{\epsilon}_{\vec{k},\lambda}}
 \end{array}\label{eq:U-P}
 \end{align}
@@ -21038,7 +21073,7 @@ l_{\vec{k},\lambda} & =\sqrt{\frac{\hbar}{M\omega_{\lambda}\left(\vec{k}\right)}
 
 \end_inset
 
-Moreover holds:
+Moreover it holds:
 \begin_inset Formula 
 \begin{align*}
 \left[\hat{b}_{\vec{k}_{1},\lambda_{1}},\hat{b}_{\vec{k}_{2},\lambda_{2}}\right] & =\delta_{\vec{k}_{1},\vec{k}_{2}}\delta_{\lambda_{1}\lambda_{2}}
@@ -21058,7 +21093,7 @@ To find the Hamiltonian describing the lattice dynamics, we go back to
 
 \end_inset
 
-Introducing no
+Introducing now
 \begin_inset Formula 
 \begin{align*}
 \hat{\vec{P_{j}}} & =\frac{1}{\sqrt{N_{\text{ion}}}}\sum_{\vec{k}\in\text{1.BZ},\lambda}\hat{P}_{\vec{k},\lambda}e^{\ii\vec{k}\cdot\vec{R}_{j}^{\left(0\right)}}\\
@@ -21983,1013 +22018,6 @@ I would also like to thank all those, who found errors by careful reading
 \end_inset
 
 Andreas Völklein
-\end_layout
-
-\begin_layout Chapter*
-GNU Free Documentation License
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-addcontentsline{toc}{section}{
-\backslash
-hspace*{2.7em}GNU Free Documentation License}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fancyhead[R]{GNU Free Documentation License}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-Version 1.3, 3 November 2008
-\begin_inset Newline newline
-\end_inset
-
-Copyright © 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
- 
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-
-\family typewriter
-<
-\family default
-
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://fsf.org/
-\end_layout
-
-\end_inset
-
-
-\family typewriter
->
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-Everyone is permitted to copy and distribute verbatim copies of this license
- document,
-\begin_inset Newline newline
-\end_inset
-
-but changing it is not allowed
-\end_layout
-
-\begin_layout Section*
-
-\noun on
-0.
- Preamble
-\end_layout
-
-\begin_layout Standard
-\noindent
-The purpose of this License is to make a manual, textbook, or other functional
- and useful document “free” in the sense of freedom: to assure everyone
- the effective freedom to copy and redistribute it, with or without modifying
- it, either commercially or noncommercially.
- Secondarily, this License preserves for the author and publisher a way
- to get credit for their work, while not being considered responsible for
- modifications made by others.
-\end_layout
-
-\begin_layout Standard
-\noindent
-This License is a kind of “copyleft”, which means that derivative works
- of the document must themselves be free in the same sense.
- It complements the GNU General Public License, which is a copyleft license
- designed for free software.
-\end_layout
-
-\begin_layout Standard
-\noindent
-We have designed this License in order to use it for manuals for free software,
- because free software needs free documentation: a free program should come
- with manuals providing the same freedoms that the software does.
- But this License is not limited to software manuals; it can be used for
- any textual work, regardless of subject matter or whether it is published
- as a printed book.
- We recommend this License principally for works whose purpose is instruction
- or reference.
-\end_layout
-
-\begin_layout Section*
-
-\noun on
-1.
- Applicability and definitions
-\end_layout
-
-\begin_layout Standard
-This License applies to any manual or other work, in any medium, that contains
- a notice placed by the copyright holder saying it can be distributed under
- the terms of this License.
- Such a notice grants a world-wide, royalty-free license, unlimited in duration,
- to use that work under the conditions stated herein.
- The “
-\series bold
-Document
-\series default
-”, below, refers to any such manual or work.
- Any member of the public is a licensee, and is addressed as “
-\series bold
-you
-\series default
-”.
- You accept the license if you copy, modify or distribute the work in a
- way requiring permission under copyright law.
-\end_layout
-
-\begin_layout Standard
-A “
-\series bold
-Modified Version
-\series default
-” of the Document means any work containing the Document or a portion of
- it, either copied verbatim, or with modifications and/or translated into
- another language.
-\end_layout
-
-\begin_layout Standard
-A “
-\series bold
-Secondary Section
-\series default
-” is a named appendix or a front-matter section of the Document that deals
- exclusively with the relationship of the publishers or authors of the Document
- to the Document's overall subject (or to related matters) and contains
- nothing that could fall directly within that overall subject.
- (Thus, if the Document is in part a textbook of mathematics, a Secondary
- Section may not explain any mathematics.) The relationship could be a matter
- of historical connection with the subject or with related matters, or of
- legal, commercial, philosophical, ethical or political position regarding
- them.
-\end_layout
-
-\begin_layout Standard
-The “
-\series bold
-Invariant Sections
-\series default
-” are certain Secondary Sections whose titles are designated, as being those
- of Invariant Sections, in the notice that says that the Document is released
- under this License.
- If a section does not fit the above definition of Secondary then it is
- not allowed to be designated as Invariant.
- The Document may contain zero Invariant Sections.
- If the Document does not identify any Invariant Sections then there are
- none.
-\end_layout
-
-\begin_layout Standard
-The “
-\series bold
-Cover Texts
-\series default
-” are certain short passages of text that are listed, as Front-Cover Texts
- or Back-Cover Texts, in the notice that says that the Document is released
- under this License.
- A Front-Cover Text may be at most 5 words, and a Back-Cover Text may be
- at most 25 words.
-\end_layout
-
-\begin_layout Standard
-A “
-\series bold
-Transparent
-\series default
-” copy of the Document means a machine-readable copy, represented in a format
- whose specification is available to the general public, that is suitable
- for revising the document straightforwardly with generic text editors or
- (for images composed of pixels) generic paint programs or (for drawings)
- some widely available drawing editor, and that is suitable for input to
- text formatters or for automatic translation to a variety of formats suitable
- for input to text formatters.
- A copy made in an otherwise Transparent file format whose markup, or absence
- of markup, has been arranged to thwart or discourage subsequent modification
- by readers is not Transparent.
- An image format is not Transparent if used for any substantial amount of
- text.
- A copy that is not “Transparent” is called “
-\series bold
-Opaque
-\series default
-”.
-\end_layout
-
-\begin_layout Standard
-Examples of suitable formats for Transparent copies include plain ASCII
- without markup, Texinfo input format, LaTeX input format, SGML or XML using
- a publicly available DTD, and standard-conforming simple HTML, PostScript
- or PDF designed for human modification.
- Examples of transparent image formats include PNG, XCF and JPG.
- Opaque formats include proprietary formats that can be read and edited
- only by proprietary word processors, SGML or XML for which the DTD and/or
- processing tools are not generally available, and the machine-generated
- HTML, PostScript or PDF produced by some word processors for output purposes
- only.
-\end_layout
-
-\begin_layout Standard
-The “
-\series bold
-Title Page
-\series default
-” means, for a printed book, the title page itself, plus such following
- pages as are needed to hold, legibly, the material this License requires
- to appear in the title page.
- For works in formats which do not have any title page as such, “Title Page”
- means the text near the most prominent appearance of the work's title,
- preceding the beginning of the body of the text.
-\end_layout
-
-\begin_layout Standard
-The “
-\series bold
-publisher
-\series default
-” means any person or entity that distributes copies of the Document to
- the public.
-\end_layout
-
-\begin_layout Standard
-A section “
-\series bold
-Entitled XYZ
-\series default
-” means a named subunit of the Document whose title either is precisely
- XYZ or contains XYZ in parentheses following text that translates XYZ in
- another language.
- (Here XYZ stands for a specific section name mentioned below, such as “
-\series bold
-Acknowledgements
-\series default
-”, “
-\series bold
-Dedications
-\series default
-”, “
-\series bold
-Endorsements
-\series default
-”, or “
-\series bold
-History
-\series default
-”.) To “
-\series bold
-Preserve the Title
-\series default
-” of such a section when you modify the Document means that it remains a
- section “Entitled XYZ” according to this definition.
-\end_layout
-
-\begin_layout Standard
-The Document may include Warranty Disclaimers next to the notice which states
- that this License applies to the Document.
- These Warranty Disclaimers are considered to be included by reference in
- this License, but only as regards disclaiming warranties: any other implication
- that these Warranty Disclaimers may have is void and has no effect on the
- meaning of this License.
-\end_layout
-
-\begin_layout Section*
-
-\noun on
-2.
- Verbatim copying
-\end_layout
-
-\begin_layout Standard
-You may copy and distribute the Document in any medium, either commercially
- or noncommercially, provided that this License, the copyright notices,
- and the license notice saying this License applies to the Document are
- reproduced in all copies, and that you add no other conditions whatsoever
- to those of this License.
- You may not use technical measures to obstruct or control the reading or
- further copying of the copies you make or distribute.
- However, you may accept compensation in exchange for copies.
- If you distribute a large enough number of copies you must also follow
- the conditions in section 3.
-\end_layout
-
-\begin_layout Standard
-You may also lend copies, under the same conditions stated above, and you
- may publicly display copies.
-\end_layout
-
-\begin_layout Section*
-
-\noun on
-3.
- Copying in quantity
-\end_layout
-
-\begin_layout Standard
-If you publish printed copies (or copies in media that commonly have printed
- covers) of the Document, numbering more than 100, and the Document's license
- notice requires Cover Texts, you must enclose the copies in covers that
- carry, clearly and legibly, all these Cover Texts: Front-Cover Texts on
- the front cover, and Back-Cover Texts on the back cover.
- Both covers must also clearly and legibly identify you as the publisher
- of these copies.
- The front cover must present the full title with all words of the title
- equally prominent and visible.
- You may add other material on the covers in addition.
- Copying with changes limited to the covers, as long as they preserve the
- title of the Document and satisfy these conditions, can be treated as verbatim
- copying in other respects.
-\end_layout
-
-\begin_layout Standard
-If the required texts for either cover are too voluminous to fit legibly,
- you should put the first ones listed (as many as fit reasonably) on the
- actual cover, and continue the rest onto adjacent pages.
-\end_layout
-
-\begin_layout Standard
-If you publish or distribute Opaque copies of the Document numbering more
- than 100, you must either include a machine-readable Transparent copy along
- with each Opaque copy, or state in or with each Opaque copy a computer-network
- location from which the general network-using public has access to download
- using public-standard network protocols a complete Transparent copy of
- the Document, free of added material.
- If you use the latter option, you must take reasonably prudent steps, when
- you begin distribution of Opaque copies in quantity, to ensure that this
- Transparent copy will remain thus accessible at the stated location until
- at least one year after the last time you distribute an Opaque copy (directly
- or through your agents or retailers) of that edition to the public.
-\end_layout
-
-\begin_layout Standard
-It is requested, but not required, that you contact the authors of the Document
- well before redistributing any large number of copies, to give them a chance
- to provide you with an updated version of the Document.
-\end_layout
-
-\begin_layout Section*
-
-\noun on
-4.
- Modifications
-\end_layout
-
-\begin_layout Standard
-You may copy and distribute a Modified Version of the Document under the
- conditions of sections 2 and 3 above, provided that you release the Modified
- Version under precisely this License, with the Modified Version filling
- the role of the Document, thus licensing distribution and modification
- of the Modified Version to whoever possesses a copy of it.
- In addition, you must do these things in the Modified Version:
-\end_layout
-
-\begin_layout Description
-A.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{3.2mm}
-\end_layout
-
-\end_inset
-
- Use in the Title Page (and on the covers, if any) a title distinct from
- that of the Document, and from those of previous versions (which should,
- if there were any, be listed in the History section of the Document).
- You may use the same title as a previous version if the original publisher
- of that version gives permission.
-\end_layout
-
-\begin_layout Description
-B.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{3.4mm}
-\end_layout
-
-\end_inset
-
- List on the Title Page, as authors, one or more persons or entities responsible
- for authorship of the modifications in the Modified Version, together with
- at least five of the principal authors of the Document (all of its principal
- authors, if it has fewer than five), unless they release you from this
- requirement.
-\end_layout
-
-\begin_layout Description
-C.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{3.4mm}
-\end_layout
-
-\end_inset
-
- State on the Title page the name of the publisher of the Modified Version,
- as the publisher.
-\end_layout
-
-\begin_layout Description
-D.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{3.4mm}
-\end_layout
-
-\end_inset
-
- Preserve all the copyright notices of the Document.
-\end_layout
-
-\begin_layout Description
-E.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{3.4mm}
-\end_layout
-
-\end_inset
-
- Add an appropriate copyright notice for your modifications adjacent to
- the other copyright notices.
-\end_layout
-
-\begin_layout Description
-F.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{3.8mm}
-\end_layout
-
-\end_inset
-
- Include, immediately after the copyright notices, a license notice giving
- the public permission to use the Modified Version under the terms of this
- License, in the form shown in the Addendum below.
-\end_layout
-
-\begin_layout Description
-G.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{3.1mm}
-\end_layout
-
-\end_inset
-
- Preserve in that license notice the full lists of Invariant Sections and
- required Cover Texts given in the Document's license notice.
-\end_layout
-
-\begin_layout Description
-H.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{3.2mm}
-\end_layout
-
-\end_inset
-
- Include an unaltered copy of this License.
-\end_layout
-
-\begin_layout Description
-I.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{5.0mm}
-\end_layout
-
-\end_inset
-
- Preserve the section Entitled “History”, Preserve its Title, and add to
- it an item stating at least the title, year, new authors, and publisher
- of the Modified Version as given on the Title Page.
- If there is no section Entitled “History” in the Document, create one stating
- the title, year, authors, and publisher of the Document as given on its
- Title Page, then add an item describing the Modified Version as stated
- in the previous sentence.
-\end_layout
-
-\begin_layout Description
-J.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{4.3mm}
-\end_layout
-
-\end_inset
-
- Preserve the network location, if any, given in the Document for public
- access to a Transparent copy of the Document, and likewise the network
- locations given in the Document for previous versions it was based on.
- These may be placed in the “History” section.
- You may omit a network location for a work that was published at least
- four years before the Document itself, or if the original publisher of
- the version it refers to gives permission.
-\end_layout
-
-\begin_layout Description
-K.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{3.3mm}
-\end_layout
-
-\end_inset
-
- For any section Entitled “Acknowledgements” or “Dedications”, Preserve
- the Title of the section, and preserve in the section all the substance
- and tone of each of the contributor acknowledgements and/or dedications
- given therein.
-\end_layout
-
-\begin_layout Description
-L.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{4.1mm}
-\end_layout
-
-\end_inset
-
- Preserve all the Invariant Sections of the Document, unaltered in their
- text and in their titles.
- Section numbers or the equivalent are not considered part of the section
- titles.
-\end_layout
-
-\begin_layout Description
-M.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{3mm}
-\end_layout
-
-\end_inset
-
- Delete any section Entitled “Endorsements”.
- Such a section may not be included in the Modified Version.
-\end_layout
-
-\begin_layout Description
-N.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{3.4mm}
-\end_layout
-
-\end_inset
-
- Do not retitle any existing section to be Entitled “Endorsements” or to
- conflict in title with any Invariant Section.
-\end_layout
-
-\begin_layout Description
-O.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hspace*{3.4mm}
-\end_layout
-
-\end_inset
-
- Preserve any Warranty Disclaimers.
-\end_layout
-
-\begin_layout Standard
-If the Modified Version includes new front-matter sections or appendices
- that qualify as Secondary Sections and contain no material copied from
- the Document, you may at your option designate some or all of these sections
- as invariant.
- To do this, add their titles to the list of Invariant Sections in the Modified
- Version's license notice.
- These titles must be distinct from any other section titles.
-\end_layout
-
-\begin_layout Standard
-You may add a section Entitled “Endorsements”, provided it contains nothing
- but endorsements of your Modified Version by various parties—for example,
- statements of peer review or that the text has been approved by an organization
- as the authoritative definition of a standard.
-\end_layout
-
-\begin_layout Standard
-You may add a passage of up to five words as a Front-Cover Text, and a passage
- of up to 25 words as a Back-Cover Text, to the end of the list of Cover
- Texts in the Modified Version.
- Only one passage of Front-Cover Text and one of Back-Cover Text may be
- added by (or through arrangements made by) any one entity.
- If the Document already includes a cover text for the same cover, previously
- added by you or by arrangement made by the same entity you are acting on
- behalf of, you may not add another; but you may replace the old one, on
- explicit permission from the previous publisher that added the old one.
-\end_layout
-
-\begin_layout Standard
-The author(s) and publisher(s) of the Document do not by this License give
- permission to use their names for publicity for or to assert or imply endorseme
-nt of any Modified Version.
-\end_layout
-
-\begin_layout Section*
-
-\noun on
-5.
- Combining documents
-\end_layout
-
-\begin_layout Standard
-You may combine the Document with other documents released under this License,
- under the terms defined in section 4 above for modified versions, provided
- that you include in the combination all of the Invariant Sections of all
- of the original documents, unmodified, and list them all as Invariant Sections
- of your combined work in its license notice, and that you preserve all
- their Warranty Disclaimers.
-\end_layout
-
-\begin_layout Standard
-The combined work need only contain one copy of this License, and multiple
- identical Invariant Sections may be replaced with a single copy.
- If there are multiple Invariant Sections with the same name but different
- contents, make the title of each such section unique by adding at the end
- of it, in parentheses, the name of the original author or publisher of
- that section if known, or else a unique number.
- Make the same adjustment to the section titles in the list of Invariant
- Sections in the license notice of the combined work.
-\end_layout
-
-\begin_layout Standard
-In the combination, you must combine any sections Entitled “History” in
- the various original documents, forming one section Entitled “History”;
- likewise combine any sections Entitled “Acknowledgements”, and any sections
- Entitled “Dedications”.
- You must delete all sections Entitled “Endorsements”.
-\end_layout
-
-\begin_layout Section*
-
-\noun on
-6.
- Collections of documents
-\end_layout
-
-\begin_layout Standard
-You may make a collection consisting of the Document and other documents
- released under this License, and replace the individual copies of this
- License in the various documents with a single copy that is included in
- the collection, provided that you follow the rules of this License for
- verbatim copying of each of the documents in all other respects.
-\end_layout
-
-\begin_layout Standard
-You may extract a single document from such a collection, and distribute
- it individually under this License, provided you insert a copy of this
- License into the extracted document, and follow this License in all other
- respects regarding verbatim copying of that document.
-\end_layout
-
-\begin_layout Section*
-
-\noun on
-7.
- Aggregation with independent works
-\end_layout
-
-\begin_layout Standard
-A compilation of the Document or its derivatives with other separate and
- independent documents or works, in or on a volume of a storage or distribution
- medium, is called an “aggregate” if the copyright resulting from the compilatio
-n is not used to limit the legal rights of the compilation's users beyond
- what the individual works permit.
- When the Document is included in an aggregate, this License does not apply
- to the other works in the aggregate which are not themselves derivative
- works of the Document.
-\end_layout
-
-\begin_layout Standard
-If the Cover Text requirement of section 3 is applicable to these copies
- of the Document, then if the Document is less than one half of the entire
- aggregate, the Document's Cover Texts may be placed on covers that bracket
- the Document within the aggregate, or the electronic equivalent of covers
- if the Document is in electronic form.
- Otherwise they must appear on printed covers that bracket the whole aggregate.
-\end_layout
-
-\begin_layout Section*
-
-\noun on
-8.
- Translation
-\end_layout
-
-\begin_layout Standard
-Translation is considered a kind of modification, so you may distribute
- translations of the Document under the terms of section 4.
- Replacing Invariant Sections with translations requires special permission
- from their copyright holders, but you may include translations of some
- or all Invariant Sections in addition to the original versions of these
- Invariant Sections.
- You may include a translation of this License, and all the license notices
- in the Document, and any Warranty Disclaimers, provided that you also include
- the original English version of this License and the original versions
- of those notices and disclaimers.
- In case of a disagreement between the translation and the original version
- of this License or a notice or disclaimer, the original version will prevail.
-\end_layout
-
-\begin_layout Standard
-If a section in the Document is Entitled “Acknowledgements”, “Dedications”,
- or “History”, the requirement (section 4) to Preserve its Title (section
- 1) will typically require changing the actual title.
-\end_layout
-
-\begin_layout Section*
-
-\noun on
-9.
- Termination
-\end_layout
-
-\begin_layout Standard
-You may not copy, modify, sublicense, or distribute the Document except
- as expressly provided under this License.
- Any attempt otherwise to copy, modify, sublicense, or distribute it is
- void, and will automatically terminate your rights under this License.
-\end_layout
-
-\begin_layout Standard
-However, if you cease all violation of this License, then your license from
- a particular copyright holder is reinstated (a) provisionally, unless and
- until the copyright holder explicitly and finally terminates your license,
- and (b) permanently, if the copyright holder fails to notify you of the
- violation by some reasonable means prior to 60 days after the cessation.
-\end_layout
-
-\begin_layout Standard
-Moreover, your license from a particular copyright holder is reinstated
- permanently if the copyright holder notifies you of the violation by some
- reasonable means, this is the first time you have received notice of violation
- of this License (for any work) from that copyright holder, and you cure
- the violation prior to 30 days after your receipt of the notice.
-\end_layout
-
-\begin_layout Standard
-Termination of your rights under this section does not terminate the licenses
- of parties who have received copies or rights from you under this License.
- If your rights have been terminated and not permanently reinstated, receipt
- of a copy of some or all of the same material does not give you any rights
- to use it.
-\end_layout
-
-\begin_layout Section*
-
-\noun on
-10.
- Future revisions of this license
-\end_layout
-
-\begin_layout Standard
-The Free Software Foundation may publish new, revised versions of the GNU
- Free Documentation License from time to time.
- Such new versions will be similar in spirit to the present version, but
- may differ in detail to address new problems or concerns.
- See 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://www.gnu.org/copyleft/
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Each version of the License is given a distinguishing version number.
- If the Document specifies that a particular numbered version of this License
- "or any later version" applies to it, you have the option of following
- the terms and conditions either of that specified version or of any later
- version that has been published (not as a draft) by the Free Software Foundatio
-n.
- If the Document does not specify a version number of this License, you
- may choose any version ever published (not as a draft) by the Free Software
- Foundation.
- If the Document specifies that a proxy can decide which future versions
- of this License can be used, that proxy's public statement of acceptance
- of a version permanently authorizes you to choose that version for the
- Document.
-\end_layout
-
-\begin_layout Section*
-
-\noun on
-11.
- Relicensing
-\end_layout
-
-\begin_layout Standard
-“Massive Multiauthor Collaboration Site” (or “MMC Site”) means any World
- Wide Web server that publishes copyrightable works and also provides prominent
- facilities for anybody to edit those works.
- A public wiki that anybody can edit is an example of such a server.
- A “Massive Multiauthor Collaboration” (or “MMC”) contained in the site
- means any set of copyrightable works thus published on the MMC site.
-\end_layout
-
-\begin_layout Standard
-“CC-BY-SA” means the Creative Commons Attribution-Share Alike 3.0 license
- published by Creative Commons Corporation, a not-for-profit corporation
- with a principal place of business in San Francisco, California, as well
- as future copyleft versions of that license published by that same organization.
-\end_layout
-
-\begin_layout Standard
-“Incorporate” means to publish or republish a Document, in whole or in part,
- as part of another Document.
-\end_layout
-
-\begin_layout Standard
-An MMC is “eligible for relicensing” if it is licensed under this License,
- and if all works that were first published under this License somewhere
- other than this MMC, and subsequently incorporated in whole or in part
- into the MMC, (1) had no cover texts or invariant sections, and (2) were
- thus incorporated prior to November 1, 2008.
-\end_layout
-
-\begin_layout Standard
-The operator of an MMC Site may republish an MMC contained in the site under
- CC-BY-SA on the same site at any time before August 1, 2009, provided the
- MMC is eligible for relicensing.
-\end_layout
-
-\begin_layout Section*
-
-\noun on
-Addendum
-\noun default
-: How to use this License for your documents
-\end_layout
-
-\begin_layout Standard
-To use this License in a document you have written, include a copy of the
- License in the document and put the following copyright and license notices
- just after the title page:
-\end_layout
-
-\begin_layout Quote
-Copyright © YEAR YOUR NAME.
-\begin_inset Newline newline
-\end_inset
-
-Permission is granted to copy, distribute and/or modify this document under
- the terms of the GNU Free Documentation License, Version 1.3 or any later
- version published by the Free Software Foundation;
-\end_layout
-
-\begin_layout Quote
-with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-\end_layout
-
-\begin_layout Quote
-A copy of the license is included in the section entitled "GNU Free Documentatio
-n License".
-\end_layout
-
-\begin_layout Standard
-If you have Invariant Sections, Front-Cover Texts and Back-Cover Texts,
- replace the "with 
-\begin_inset Formula $\ldots$
-\end_inset
-
- Texts." line with this:
-\end_layout
-
-\begin_layout Quote
-with the Invariant Sections being LIST THEIR TITLES, with the Front-Cover
- Texts being LIST, and with the Back-Cover Texts being LIST.
-\end_layout
-
-\begin_layout Standard
-If you have Invariant Sections without Cover Texts, or some other combination
- of the three, merge those two alternatives to suit the situation.
-\end_layout
-
-\begin_layout Standard
-If your document contains nontrivial examples of program code, we recommend
- releasing these examples in parallel under your choice of free software
- license, such as the GNU General Public License, to permit their use in
- free software.
 \end_layout
 
 \begin_layout Standard

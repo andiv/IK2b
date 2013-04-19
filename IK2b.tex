@@ -1,4 +1,4 @@
-%% LyX 2.0.5 created this file.  For more info, see http://www.lyx.org/.
+%% LyX 2.0.5.1 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
 \documentclass[11pt,ngerman,english]{scrreprt}
 \usepackage[T1]{fontenc}
@@ -301,7 +301,6 @@
 
 \maketitle
 \fancyhead[R]{License}
-\setcounter{page}{2} % sonst gibt es aus irgendeinem Grund zweimal die Seite 1!?!?!?
 
 
 \subsubsection*{ATTENTION}
@@ -325,8 +324,7 @@ or any later version published by the Free Software Foundation;
 with no Invariant Sections, no Front-Cover Texts, and no Back-Cover
 Texts.
 
-A copy of the license is included in the section entitled “GNU Free
-Documentation License”.
+A copy of the license is included in the document entitled “GFDL”.
 
 
 \subsubsection*{Disclaimer of Warranty}
@@ -1003,7 +1001,7 @@ degrees of freedom the eigenstates depend on $f$ quantum numbers:
 r & =\left(n_{1},n_{2},\ldots,n_{f}\right)
 \end{align*}
 \emph{Note}: We assumed here that the closed system is restricted
-to a finite Volume $V$, such that the quantum numbers are discrete.
+to a finite volume $V$, such that the quantum numbers are discrete.
 \item \emph{Ideal gas of $N$ particles in a box of volume $V$}: The interaction
 between gas particles is neglected (ideal gas). The total Hamilton
 operator is the sum of the Hamilton operators $\hat{h}_{\nu}$ of
@@ -2590,7 +2588,7 @@ $\hat{S}_{+}$ ($\hat{S}_{-}$).
 \subsubsection*{Example}
 
 \begin{align}
-\KET{\vec{r}_{1}\vec{r}_{2}\ldots\vec{r}_{N}|\psi} & =\sum_{\nu_{1},\ldots,\nu_{N}}A_{\nu_{1},\ldots,\nu_{N}}\psi_{\nu_{1}}\left(\vec{r}_{1}\right)\ldots\psi_{\nu_{N}}\left(\vec{r}_{N}\right)
+\BraKet{\vec{r}_{1}\vec{r}_{2}\ldots\vec{r}_{N}|\psi} & =\sum_{\nu_{1},\ldots,\nu_{N}}A_{\nu_{1},\ldots,\nu_{N}}\psi_{\nu_{1}}\left(\vec{r}_{1}\right)\ldots\psi_{\nu_{N}}\left(\vec{r}_{N}\right)
 \end{align}
 \begin{align}
 \hat{S}_{\pm}\prod_{j=1}^{N}\psi_{\nu_{j}}\left(\vec{r}_{j}\right) & :=\frac{\mathcal{N}}{\sqrt{N!}}\abs{\begin{array}{ccc}
@@ -2600,7 +2598,7 @@ $\hat{S}_{+}$ ($\hat{S}_{-}$).
 \end{array}}_{\pm}
 \end{align}
 Here $\abs ._{+}$ is the permanent (without sign change) and $\abs ._{-}$
-the normal determinant (slater determinant). Moreover the normalization
+the normal determinant (Slater determinant). Moreover the normalization
 factor is:
 \begin{align}
 \mathcal{N} & =\frac{1}{\prod_{\left\{ \nu_{i}\right\} }\sqrt{n_{\nu_{i}}!}}
@@ -2709,7 +2707,7 @@ like photons and phonons. These are excitations and therefore their
 average number depends on the temperature and cannot be fixed. For
 these systems, the particle number does not enter the Hamiltonian
 and therefore the energy $E_{r}$ of the microstate $r$ is independent
-on $N$.
+of $N$.
 \begin{align}
 \mu & =\frac{\overline{\partial E_{r}}}{\partial N}=0
 \end{align}
@@ -2823,7 +2821,7 @@ is a function of $T$ and $v$. Define the \emph{Fermi energy} as:
 \varepsilon_{F} & =\mu\left(T=0,v\right)
 \end{align*}
 
-\item For a gapped structure (semi conductor), $\varepsilon_{F}=\mu\left(T=0\right)$
+\item For a gapped structure (semiconductor), $\varepsilon_{F}=\mu\left(T=0\right)$
 lies in the middle of the gap.\\
 \textcolor{green}{TODO: Abb13; semi conductor}
 \end{itemize}
@@ -3130,24 +3128,24 @@ from the electrons.
 
 \noindent \begin{center}
 \begin{tabular}{c|c}
-Metal & ${\displaystyle \frac{\gamma_{\text{measured}}}{\gamma}}$\tabularnewline
+Metal$\vphantom{\bigg|}$ & ${\displaystyle \frac{\gamma_{\text{measured}}}{\gamma}}$\tabularnewline
 \hline 
 \hline 
-Li & 2,17\tabularnewline
+Li$\vphantom{\Big|}$ & 2,17\tabularnewline
 \hline 
-Na & 1,21\tabularnewline
+Na$\vphantom{\Big|}$ & 1,21\tabularnewline
 \hline 
-K & 1,23\tabularnewline
+K$\vphantom{\Big|}$ & 1,23\tabularnewline
 \hline 
-Rb & 1,22\tabularnewline
+Rb$\vphantom{\Big|}$ & 1,22\tabularnewline
 \hline 
-Cs & 1,39\tabularnewline
+Cs$\vphantom{\Big|}$ & 1,39\tabularnewline
 \hline 
-Cu & 1,39\tabularnewline
+Cu$\vphantom{\Big|}$ & 1,39\tabularnewline
 \hline 
-Ag & 1,00\tabularnewline
+Ag$\vphantom{\Big|}$ & 1,00\tabularnewline
 \hline 
-Au & 1,13\tabularnewline
+Au$\vphantom{\Big|}$ & 1,13\tabularnewline
 \end{tabular}
 \par\end{center}
 
@@ -3852,12 +3850,12 @@ assume the ions to sit in their equilibrium position $\vec{R}_{0,\alpha}$
 attained at zero temperature and neglect any further effect of $\hat{V}_{\text{ii}}$.
 We then solve the problem only described by:
 \begin{align}
-\hat{H} & =\hat{T}_{\text{el}}+\hat{V}_{\text{ei}}=\sum_{i=1}^{N}\frac{\hat{p}_{i}^{2}}{2m}-\sum_{i=1}^{N}\sum_{\alpha}\frac{Z_{\alpha e^{2}}}{\abs{\vec{r}_{i}-\vec{R}_{0,\alpha}}}=\nonumber \\
+\hat{H} & =\hat{T}_{\text{el}}+\hat{V}_{\text{ei}}=\sum_{i=1}^{N}\frac{\hat{p}_{i}^{2}}{2m}-\sum_{i=1}^{N}\sum_{\alpha}\frac{Z_{\alpha}e^{2}}{\abs{\vec{r}_{i}-\vec{R}_{0,\alpha}}}=\nonumber \\
  & =\sum_{i=1}^{N}\underbrace{\left(\frac{\hat{p}_{i}^{2}}{2m}+v\left(\vec{r}_{i}\right)\right)}_{=:\hat{h}_{i}}
 \end{align}
 Here we define:
 \begin{align}
-v\left(\vec{r}_{i}\right) & :=-\sum_{\alpha}\frac{Z_{\alpha e^{2}}}{\abs{\vec{r}_{i}-\vec{R}_{0,\alpha}}}
+v\left(\vec{r}_{i}\right) & :=-\sum_{\alpha}\frac{Z_{\alpha}e^{2}}{\abs{\vec{r}_{i}-\vec{R}_{0,\alpha}}}
 \end{align}
 
 
@@ -4624,7 +4622,7 @@ _{1}\BraKet{s|\hat{v}_{\text{atom}}|p}_{2} & =\frac{V_{sp\sigma}}{\sqrt{3}}=:-\g
 _{1}\BraKet{p_{y}|\hat{v}_{\text{atom}}|p_{y}}_{2} & =\frac{V_{pp\sigma}}{3}+\frac{2V_{pp\pi}}{3}=:\gamma_{pp}\\
 _{1}\BraKet{p_{x}|\hat{v}_{\text{atom}}|p_{y}}_{2} & =V_{pp\sigma}\cos^{2}\Theta-V_{pp\pi}\cos^{2}\Theta=\frac{V_{pp\sigma}}{3}-\frac{V_{pp\pi}}{3}=:\gamma_{xy}
 \end{align*}
-we get the LCAO matrix:
+we get the LCAO matrix:\vspace{-7mm}
 \begin{align*}
 \mathcal{H} & =\begin{array}{c}
 s^{c}\\
@@ -4852,18 +4850,18 @@ and fourth are only partially occupied.
 \noindent \begin{center}
 \begin{tabular}{c|c}
 Alkali metals & Noble metals\tabularnewline
-(body-centered cubic) & (face-centered cubic)\tabularnewline
+(body-centered cubic)$\vphantom{\Big|}$ & (face-centered cubic)\tabularnewline
 \hline 
 \hline 
-Li: $\left[\text{He}\right]2s^{1}$ & \tabularnewline
+Li: $\left[\text{He}\right]2s^{1}$$\vphantom{\Big|}$ & \tabularnewline
 \hline 
-Na: $\left[\text{Ne}\right]3s^{1}$ & \tabularnewline
+Na: $\left[\text{Ne}\right]3s^{1}$$\vphantom{\Big|}$ & \tabularnewline
 \hline 
-K: $\left[\text{Ar}\right]4s^{1}$ & Cu: $\left[\text{Ar}\right]3d^{10}4s^{1}$\tabularnewline
+K: $\left[\text{Ar}\right]4s^{1}$$\vphantom{\Big|}$ & Cu: $\left[\text{Ar}\right]3d^{10}4s^{1}$\tabularnewline
 \hline 
-Rb: $\left[\text{Kr}\right]5s^{1}$ & Ag: $\left[\text{Kr}\right]4d^{10}5s^{1}$\tabularnewline
+Rb: $\left[\text{Kr}\right]5s^{1}$$\vphantom{\Big|}$ & Ag: $\left[\text{Kr}\right]4d^{10}5s^{1}$\tabularnewline
 \hline 
-Cs: $\left[\text{Xe}\right]6s^{1}$ & Au: $\left[\text{Xe}\right]5d^{10}6s^{1}$\tabularnewline
+Cs: $\left[\text{Xe}\right]6s^{1}$$\vphantom{\Big|}$ & Au: $\left[\text{Xe}\right]5d^{10}6s^{1}$\tabularnewline
 \end{tabular}
 \par\end{center}
 
@@ -5240,11 +5238,11 @@ t_{\mu\nu} & =\BraKet{\mu|\hat{t}|\nu}=\int\dd^{3}r\int\dd^{3}r'\BraKet{\mu|\vec
 \end{align*}
 In the position representation we get:
 \begin{align*}
-\varrho_{\text{tot}}\left(\vec{r}\right) & =\hat{a}^{\dagger}\left(\vec{r}\right)\hat{a}\left(\vec{r}\right)
+\hat{\varrho}_{\text{tot}}\left(\vec{r}\right) & =\hat{a}^{\dagger}\left(\vec{r}\right)\hat{a}\left(\vec{r}\right)
 \end{align*}
 In the momentum representation this gives:
 \begin{align*}
-\varrho_{\text{tot}}\left(\vec{k}\right) & =\frac{1}{V}\sum_{\vec{k},\vec{q}}e^{\ii\vec{q}\cdot\vec{r}}\hat{a}_{\vec{k}}^{\dagger}\hat{a}_{\vec{k}+\vec{q}}
+\hat{\varrho}_{\text{tot}}\left(\vec{k}\right) & =\frac{1}{V}\sum_{\vec{k},\vec{q}}e^{\ii\vec{q}\cdot\vec{r}}\hat{a}_{\vec{k}}^{\dagger}\hat{a}_{\vec{k}+\vec{q}}
 \end{align*}
 
 
@@ -5426,7 +5424,8 @@ and \eqref{eq:Fermi-momentum}):
 The importance of the Coulomb interaction diminishes with density
 as a consequence of the \emph{Pauli principle}.
 \item A parameter to quantify the ratio of the two energy scales is the
-dimensionless quantity $r_{s}$ (cf. \noun{Ashcroft} and \noun{Mermin}):
+dimensionless quantity $r_{s}$ (cf. \noun{Ashcroft} and \noun{Mermin},
+Table 1.1):
 \begin{align*}
 r_{s} & :=\frac{r_{0}}{a_{0}}=\frac{r_{0}}{\hbar^{2}m^{-1}e^{-2}}=\frac{e^{2}}{r_{0}}\cdot\frac{mr_{0}^{2}}{\hbar^{2}}\approx\frac{\varepsilon_{\text{pot}}}{\varepsilon_{\text{kin}}}
 \end{align*}
@@ -5434,18 +5433,18 @@ r_{s} & :=\frac{r_{0}}{a_{0}}=\frac{r_{0}}{\hbar^{2}m^{-1}e^{-2}}=\frac{e^{2}}{r
 \end{itemize}
 \noindent \begin{center}
 \begin{tabular}{c|c}
-Metal & $r_{s}$\tabularnewline
+Metal$\vphantom{\Big|}$ & $r_{s}$\tabularnewline
 \hline 
 \hline 
-Li & $3,2$\tabularnewline
+Li$\vphantom{\Big|}$ & 3,3\tabularnewline
 \hline 
-Na & $3,9$\tabularnewline
+Na$\vphantom{\Big|}$ & 3,9\tabularnewline
 \hline 
-K & $4,9$\tabularnewline
+K$\vphantom{\Big|}$ & 4,9\tabularnewline
 \hline 
-Cu & $2,7$\tabularnewline
+Cu$\vphantom{\Big|}$ & 2,7\tabularnewline
 \hline 
-Be & $1,9$\tabularnewline
+Be$\vphantom{\Big|}$ & 1,9\tabularnewline
 \end{tabular}
 \par\end{center}
 
@@ -5473,7 +5472,7 @@ noninteracting fermions:
 \KET{\text{FS}} & =\prod_{\vec{k}_{i},\norm{\vec{k}_{i}}\le k_{F}}\prod_{\sigma}\hat{a}_{\vec{k}_{i},\sigma}^{\dagger}\KET 0\\
 \varepsilon_{k_{1}} & \le\varepsilon_{k_{2}}\le\ldots\le\varepsilon_{k_{F}}
 \end{align*}
-x Hence we get:
+Hence we get:
 \begin{align*}
 E^{\left(0\right)} & =\BraKet{\text{FS}|\sum_{\vec{k},\sigma}\frac{\hbar^{2}}{2m}k^{2}\hat{n}_{\vec{k},\sigma}|\text{FS}}
 \end{align*}
@@ -5524,7 +5523,7 @@ For the integration limits consider:
 \frac{q}{2k_{F}} & \le\cos\left(\theta_{k}\right)\le1\\
 \frac{q}{2\cos\left(\theta_{k}\right)} & <k<k_{F}
 \end{align*}
-(see \noun{Bruus} and \noun{Flensberg})
+(see \noun{Bruus} and \noun{Flensberg}, section 2.2.1)
 
 This yields:
 \begin{align*}
@@ -5567,7 +5566,7 @@ E^{\left(2\right)} & =\sum_{\KET{\nu}\not=\KET{\text{FS}}}\frac{\BraKet{\text{FS
 For non-vanishing contributions must hold:
 \begin{enumerate}[label=\roman*)]
 \item The intermediate states $\KET{\nu}$ are outside of the Fermi sphere.
-\item Exited electrons must be put back in the holes left behind.
+\item Excited electrons must be put back in the holes left behind.
 \end{enumerate}
 Then holds e.g. for direct contribution:
 \begin{align*}
@@ -6143,7 +6142,7 @@ We consider $\ii\hbar\partial_{t}\tilde{\chi}^{R}$ and use the Schrödinger
 equation for the time evolution:
 \begin{align*}
 \ii\hbar\partial_{t}\tilde{\chi}^{R}\left(\vec{q,}\vec{k},\sigma,t-t'\right) & =\delta\left(t-t'\right)\left\langle \left[\left(\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}\right)\left(t\right),\hat{\varrho}_{I}\left(-\vec{q},t'\right)\right]\right\rangle _{0}+\\
- & \qquad+\left(\frac{-\ii}{\hbar}\Theta\left(t-t'\right)\right)\left(\frac{-\hbar}{\ii}\right)\left\langle \frac{\ii}{\hbar}\left[\hat{H},\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q}}\right],\hat{\varrho}_{I}\left(-\vec{q},t'\right)\right\rangle _{0}
+ & \qquad+\left(\frac{-\ii}{\hbar}\Theta\left(t-t'\right)\right)\left(\frac{-\hbar}{\ii}\right)\left\langle \frac{\ii}{\hbar}\left[\hat{H},\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}\right],\hat{\varrho}_{I}\left(-\vec{q},t'\right)\right\rangle _{0}
 \end{align*}
 Remember:
 \begin{align*}
@@ -6151,15 +6150,15 @@ Remember:
 \end{align*}
 For the first commutator we obtain:
 \begin{align*}
-\left[\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q}},\hat{\varrho}\left(-\vec{q}\right)\right] & =\sum_{\vec{k}',\sigma'}\left[\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma},\hat{c}_{\vec{k}',\sigma'}^{\dagger}\hat{c}_{\vec{k}'-\vec{q},\sigma'}\right]=\\
+\left[\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma},\hat{\varrho}\left(-\vec{q}\right)\right] & =\sum_{\vec{k}',\sigma'}\left[\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma},\hat{c}_{\vec{k}',\sigma'}^{\dagger}\hat{c}_{\vec{k}'-\vec{q},\sigma'}\right]=\\
  & =\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k},\sigma}-\hat{c}_{\vec{k}+\vec{q},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}=\left(\hat{n}_{\vec{k},\sigma}-\hat{n}_{\vec{k}+\vec{q},\sigma}\right)
 \end{align*}
 \begin{align*}
-\left[\hat{H}_{0},\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q}}\right] & =\left(\varepsilon_{\vec{k}}-\varepsilon_{\vec{k}+\vec{q}}\right)\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}
+\left[\hat{H}_{0},\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}\right] & =\left(\varepsilon_{\vec{k}}-\varepsilon_{\vec{k}+\vec{q}}\right)\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}
 \end{align*}
 \begin{align*}
 \left[\hat{V}_{ee}^{\text{jellium}},\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}\right] & =-\frac{1}{2V}\sum_{\vec{k}',\vec{q}'\not=0,\sigma'}\tilde{v}_{ee}\left(q\right)\bigg(\hat{c}_{\vec{k}+\vec{q}',\sigma}^{\dagger}\hat{c}_{\vec{k}'-\vec{q}',\sigma'}^{\dagger}\hat{c}_{\vec{k}',\sigma'}\hat{c}_{\vec{k}+\vec{q},\sigma}+\\
- & \qquad+\hat{c}_{\vec{k}'+\vec{q}',\sigma'}^{\dagger}\hat{c}_{\vec{k}-\vec{q}',\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}\hat{c}_{\vec{k}',\sigma'}-\hat{c}_{\vec{k}'+\vec{q}',\sigma'}^{\dagger}\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q}-\vec{q}',\sigma}\hat{c}_{\vec{k}',\sigma'}-\\
+ & \qquad+\hat{c}_{\vec{k}'+\vec{q}',\sigma'}^{\dagger}\hat{c}_{\vec{k}-\vec{q}',\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q},\sigma}\hat{c}_{\vec{k}',\sigma'}-\hat{c}_{\vec{k}'+\vec{q}',\sigma'}^{\dagger}\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}+\vec{q}+\vec{q}',\sigma}\hat{c}_{\vec{k}',\sigma'}-\\
  & \qquad-\hat{c}_{\vec{k},\sigma}^{\dagger}\hat{c}_{\vec{k}'-\vec{q}',\sigma'}^{\dagger}\hat{c}_{\vec{k}',\sigma'}\hat{c}_{\vec{k}+\vec{q}-\vec{q}',\sigma}\bigg)
 \end{align*}
 This set of equations in general cannot be closed, because the nested
@@ -6197,18 +6196,22 @@ Let us take the Fourier transformation:
 \begin{align*}
 \left(\hbar\omega+\ii\eta+\varepsilon_{\vec{k}}-\varepsilon_{\vec{k}+\vec{q}}\right)\tilde{\chi}^{R}\left(\vec{q},\vec{k},\sigma,\omega\right) & =\frac{f\left(\varepsilon_{\vec{k}}\right)-f\left(\varepsilon_{\vec{k}+\vec{q}}\right)}{1-\frac{\tilde{v}_{ee}\left(q\right)}{V}\sum_{\vec{k}',\sigma'}\tilde{\chi}\left(\vec{q},\vec{k}',\sigma',\omega\right)}
 \end{align*}
+Somewhere happen an error, because this should have a different sign:
 \begin{align*}
-\Rightarrow\qquad\tilde{\chi}^{R}\left(\vec{q},\vec{k},\sigma,\omega\right) & =\frac{f\left(\varepsilon_{\vec{k}}\right)-f\left(\varepsilon_{\vec{k}+\vec{q}}\right)}{\hbar\omega+\ii\eta+\varepsilon_{\vec{k}}-\varepsilon_{\vec{k}+\vec{q}}}\left(1-\left(+\right)\frac{\tilde{v}_{ee}\left(q\right)}{V}\sum_{\vec{k}',\sigma'}\tilde{\chi}\left(\vec{q},\vec{k}',\sigma',\omega\right)\right)
+\left(\hbar\omega+\ii\eta+\varepsilon_{\vec{k}}-\varepsilon_{\vec{k}+\vec{q}}\right)\tilde{\chi}^{R}\left(\vec{q},\vec{k},\sigma,\omega\right) & =\frac{f\left(\varepsilon_{\vec{k}}\right)-f\left(\varepsilon_{\vec{k}+\vec{q}}\right)}{1+\frac{\tilde{v}_{ee}\left(q\right)}{V}\sum_{\vec{k}',\sigma'}\tilde{\chi}\left(\vec{q},\vec{k}',\sigma',\omega\right)}
+\end{align*}
+\begin{align*}
+\Rightarrow\qquad\tilde{\chi}^{R}\left(\vec{q},\vec{k},\sigma,\omega\right) & =\frac{f\left(\varepsilon_{\vec{k}}\right)-f\left(\varepsilon_{\vec{k}+\vec{q}}\right)}{\hbar\omega+\ii\eta+\varepsilon_{\vec{k}}-\varepsilon_{\vec{k}+\vec{q}}}\left(1-\frac{\tilde{v}_{ee}\left(q\right)}{V}\sum_{\vec{k}',\sigma'}\tilde{\chi}\left(\vec{q},\vec{k}',\sigma',\omega\right)\right)
 \end{align*}
 Remember:
 \begin{align*}
 \tilde{\chi}^{R}\left(\vec{q},\omega\right) & =\frac{e^{2}}{V}\sum_{\vec{k},\sigma}\tilde{\chi}^{R}\left(\vec{q},\vec{k},\sigma,\omega\right)
 \end{align*}
 \begin{align*}
-\Rightarrow\qquad\tilde{\chi}^{R}\left(\vec{q},\omega\right) & =\tilde{\chi}_{0}\left(1-\left(+\right)\tilde{u}_{ee}\left(q\right)\tilde{\chi}^{R}\left(\vec{q},\omega\right)\right)
+\Rightarrow\qquad\tilde{\chi}^{R}\left(\vec{q},\omega\right) & =\tilde{\chi}_{0}\left(1-\tilde{u}_{ee}\left(q\right)\tilde{\chi}^{R}\left(\vec{q},\omega\right)\right)
 \end{align*}
 \begin{align*}
-\Rightarrow\qquad\tilde{\chi}^{R}\left(\vec{q},\omega\right) & =\frac{\tilde{\chi}_{0}}{1+\left(-\right)\tilde{u}_{ee}\left(q\right)\tilde{\chi}_{0}}=:\tilde{\chi}_{\text{RPA}}\left(\vec{q},\omega\right)
+\Rightarrow\qquad\tilde{\chi}^{R}\left(\vec{q},\omega\right) & =\frac{\tilde{\chi}_{0}}{1+\tilde{u}_{ee}\left(q\right)\tilde{\chi}_{0}}=:\tilde{\chi}_{\text{RPA}}\left(\vec{q},\omega\right)
 \end{align*}
 \emph{Note}: $\tilde{\chi}_{\text{RPA}}$ is obtained from a Dyson
 series:
@@ -6222,7 +6225,7 @@ This tells us that also a diagrammatic solution would be possible.
 \begin{align*}
 \widetilde{\varepsilon^{-1}}\left(\vec{q},\omega\right) & =1+\tilde{u}_{ee}\left(q\right)\tilde{\chi}_{\text{RPA}}\left(\vec{q},\omega\right)=1+\frac{\tilde{u}_{ee}\tilde{\chi}_{0}}{1-\tilde{u}_{ee}\left(q\right)\tilde{\chi}_{0}}=\frac{1}{1-\tilde{u}_{ee}\left(q\right)\tilde{\chi}_{0}\left(\vec{q},\omega\right)}
 \end{align*}
-We hence have screening. (cf. \noun{Flensberg})
+We hence have screening. (cf. \noun{Flensberg}, section 9.3)
 \begin{align*}
 \lim_{\vec{q}\to0}\tilde{\chi}_{0}\left(\vec{q},\omega\right) & =-e^{2}\mathcal{D}\left(\varepsilon_{F}\right)
 \end{align*}
@@ -6290,7 +6293,7 @@ with the displacement $\vec{u_{j}}\left(t\right)$ from the equilibrium
 position.\\
 The \emph{classical} equations of motion for the displacements read:
 \begin{align*}
-M\ddot{\vec{U_{j}}}\left(t\right) & =-\frac{\partial V_{ii}}{\partial\vec{u}_{j}}=-\sum_{l}\frac{\partial}{\partial\vec{u}_{j}}v_{ii}\left(\vec{R_{l}}-\vec{R_{j}}\right)
+M\ddot{\vec{u_{j}}}\left(t\right) & =-\frac{\partial V_{ii}}{\partial\vec{u}_{j}}=-\sum_{l}\frac{\partial}{\partial\vec{u}_{j}}v_{ii}\left(\vec{R_{l}}-\vec{R_{j}}\right)
 \end{align*}
 In order to simplify this problem, we proceed in steps:
 \begin{enumerate}[label=\roman*)]
@@ -6383,10 +6386,10 @@ satisfy the same equations as the harmonic oscillator. So they can
 also be quantized.\\
 How to quantize?\\
 We introduce (bosonic) creation and annihilation operators, such that
-holds:
+the following holds:
 \begin{align}
 \begin{array}{c}
-{\displaystyle \hat{\vec{U}}_{\vec{k},l}=l_{\vec{k},\lambda}\frac{1}{\sqrt{2}}\left(\hat{b}_{-\vec{k},\lambda}^{\dagger}+\hat{b}_{\vec{k},\lambda}\right)\vec{\epsilon}_{\vec{k},\lambda}}\\
+{\displaystyle \hat{\vec{U}}_{\vec{k},l}=l_{\vec{k},\lambda}\frac{1}{\sqrt{2}}\left(\hat{b}_{-\vec{k},\lambda}^{\dagger}+\hat{b}_{\vec{k},\lambda}\right)\vec{\epsilon}_{\vec{k},\lambda}}\ \ \ \\
 {\displaystyle \hat{\vec{P}}_{\vec{k},l}=\frac{\hbar}{l_{\vec{k},\lambda}}\cdot\frac{\ii}{\sqrt{2}}\left(\hat{b}_{-\vec{k},\lambda}-\hat{b}_{\vec{k},\lambda}\right)\vec{\epsilon}_{\vec{k},\lambda}}
 \end{array}\label{eq:U-P}
 \end{align}
@@ -6394,7 +6397,7 @@ Here we introduced the oscillator length:
 \begin{align*}
 l_{\vec{k},\lambda} & =\sqrt{\frac{\hbar}{M\omega_{\lambda}\left(\vec{k}\right)}}
 \end{align*}
-Moreover holds:
+Moreover it holds:
 \begin{align*}
 \left[\hat{b}_{\vec{k}_{1},\lambda_{1}},\hat{b}_{\vec{k}_{2},\lambda_{2}}\right] & =\delta_{\vec{k}_{1},\vec{k}_{2}}\delta_{\lambda_{1}\lambda_{2}}
 \end{align*}
@@ -6403,7 +6406,7 @@ to $\hat{H}_{\text{ion}}$ and look at:
 \begin{align}
 \hat{H}_{\text{ph}} & =\hat{T}_{\text{ion}}+\frac{1}{2}\sum_{i,j}\sum_{\mu,\nu}\left(\hat{\vec{U_{i}}}\right)_{\mu}D_{\mu\nu}\left(\hat{\vec{U_{j}}}\right)_{\nu}
 \end{align}
-Introducing no
+Introducing now
 \begin{align*}
 \hat{\vec{P_{j}}} & =\frac{1}{\sqrt{N_{\text{ion}}}}\sum_{\vec{k}\in\text{1.BZ},\lambda}\hat{P}_{\vec{k},\lambda}e^{\ii\vec{k}\cdot\vec{R}_{j}^{\left(0\right)}}\\
 \hat{\vec{U_{j}}} & =\frac{1}{\sqrt{N_{\text{ion}}}}\sum_{\vec{k}\in\text{1.BZ},\lambda}\hat{U}_{\vec{k},\lambda}e^{\ii\vec{k}\cdot\vec{R}_{j}^{\left(0\right)}}
@@ -6513,478 +6516,6 @@ reading and told me of them.
 
 
 \hfill{}Andreas Völklein
-
-
-\chapter*{GNU Free Documentation License}
-
-\addcontentsline{toc}{section}{\hspace*{2.7em}GNU Free Documentation License}
-
-\fancyhead[R]{GNU Free Documentation License}
-
-\noindent \begin{center}
-Version 1.3, 3 November 2008\\
-Copyright © 2000, 2001, 2002, 2007, 2008 Free Software Foundation,
-Inc. 
-\par\end{center}
-
-\noindent \begin{center}
-\texttt{<}\url{https://fsf.org/}\texttt{>}
-\par\end{center}
-
-\noindent \begin{center}
-Everyone is permitted to copy and distribute verbatim copies of this
-license document,\\
-but changing it is not allowed
-\par\end{center}
-
-
-\section*{\noun{0. Preamble}}
-
-\noindent The purpose of this License is to make a manual, textbook,
-or other functional and useful document “free” in the sense of freedom:
-to assure everyone the effective freedom to copy and redistribute
-it, with or without modifying it, either commercially or noncommercially.
-Secondarily, this License preserves for the author and publisher a
-way to get credit for their work, while not being considered responsible
-for modifications made by others.
-
-\noindent This License is a kind of “copyleft”, which means that derivative
-works of the document must themselves be free in the same sense. It
-complements the GNU General Public License, which is a copyleft license
-designed for free software.
-
-\noindent We have designed this License in order to use it for manuals
-for free software, because free software needs free documentation:
-a free program should come with manuals providing the same freedoms
-that the software does. But this License is not limited to software
-manuals; it can be used for any textual work, regardless of subject
-matter or whether it is published as a printed book. We recommend
-this License principally for works whose purpose is instruction or
-reference.
-
-
-\section*{\noun{1. Applicability and definitions}}
-
-This License applies to any manual or other work, in any medium, that
-contains a notice placed by the copyright holder saying it can be
-distributed under the terms of this License. Such a notice grants
-a world-wide, royalty-free license, unlimited in duration, to use
-that work under the conditions stated herein. The “\textbf{Document}”,
-below, refers to any such manual or work. Any member of the public
-is a licensee, and is addressed as “\textbf{you}”. You accept the
-license if you copy, modify or distribute the work in a way requiring
-permission under copyright law.
-
-A “\textbf{Modified Version}” of the Document means any work containing
-the Document or a portion of it, either copied verbatim, or with modifications
-and/or translated into another language.
-
-A “\textbf{Secondary Section}” is a named appendix or a front-matter
-section of the Document that deals exclusively with the relationship
-of the publishers or authors of the Document to the Document's overall
-subject (or to related matters) and contains nothing that could fall
-directly within that overall subject. (Thus, if the Document is in
-part a textbook of mathematics, a Secondary Section may not explain
-any mathematics.) The relationship could be a matter of historical
-connection with the subject or with related matters, or of legal,
-commercial, philosophical, ethical or political position regarding
-them.
-
-The “\textbf{Invariant Sections}” are certain Secondary Sections whose
-titles are designated, as being those of Invariant Sections, in the
-notice that says that the Document is released under this License.
-If a section does not fit the above definition of Secondary then it
-is not allowed to be designated as Invariant. The Document may contain
-zero Invariant Sections. If the Document does not identify any Invariant
-Sections then there are none.
-
-The “\textbf{Cover Texts}” are certain short passages of text that
-are listed, as Front-Cover Texts or Back-Cover Texts, in the notice
-that says that the Document is released under this License. A Front-Cover
-Text may be at most 5 words, and a Back-Cover Text may be at most
-25 words.
-
-A “\textbf{Transparent}” copy of the Document means a machine-readable
-copy, represented in a format whose specification is available to
-the general public, that is suitable for revising the document straightforwardly
-with generic text editors or (for images composed of pixels) generic
-paint programs or (for drawings) some widely available drawing editor,
-and that is suitable for input to text formatters or for automatic
-translation to a variety of formats suitable for input to text formatters.
-A copy made in an otherwise Transparent file format whose markup,
-or absence of markup, has been arranged to thwart or discourage subsequent
-modification by readers is not Transparent. An image format is not
-Transparent if used for any substantial amount of text. A copy that
-is not “Transparent” is called “\textbf{Opaque}”.
-
-Examples of suitable formats for Transparent copies include plain
-ASCII without markup, Texinfo input format, \LaTeX{} input format,
-SGML or XML using a publicly available DTD, and standard-conforming
-simple HTML, PostScript or PDF designed for human modification. Examples
-of transparent image formats include PNG, XCF and JPG. Opaque formats
-include proprietary formats that can be read and edited only by proprietary
-word processors, SGML or XML for which the DTD and/or processing tools
-are not generally available, and the machine-generated HTML, PostScript
-or PDF produced by some word processors for output purposes only.
-
-The “\textbf{Title Page}” means, for a printed book, the title page
-itself, plus such following pages as are needed to hold, legibly,
-the material this License requires to appear in the title page. For
-works in formats which do not have any title page as such, “Title
-Page” means the text near the most prominent appearance of the work's
-title, preceding the beginning of the body of the text.
-
-The “\textbf{publisher}” means any person or entity that distributes
-copies of the Document to the public.
-
-A section “\textbf{Entitled XYZ}” means a named subunit of the Document
-whose title either is precisely XYZ or contains XYZ in parentheses
-following text that translates XYZ in another language. (Here XYZ
-stands for a specific section name mentioned below, such as “\textbf{Acknowledgements}”,
-“\textbf{Dedications}”, “\textbf{Endorsements}”, or “\textbf{History}”.)
-To “\textbf{Preserve the Title}” of such a section when you modify
-the Document means that it remains a section “Entitled XYZ” according
-to this definition.
-
-The Document may include Warranty Disclaimers next to the notice which
-states that this License applies to the Document. These Warranty Disclaimers
-are considered to be included by reference in this License, but only
-as regards disclaiming warranties: any other implication that these
-Warranty Disclaimers may have is void and has no effect on the meaning
-of this License.
-
-
-\section*{\noun{2. Verbatim copying}}
-
-You may copy and distribute the Document in any medium, either commercially
-or noncommercially, provided that this License, the copyright notices,
-and the license notice saying this License applies to the Document
-are reproduced in all copies, and that you add no other conditions
-whatsoever to those of this License. You may not use technical measures
-to obstruct or control the reading or further copying of the copies
-you make or distribute. However, you may accept compensation in exchange
-for copies. If you distribute a large enough number of copies you
-must also follow the conditions in section 3.
-
-You may also lend copies, under the same conditions stated above,
-and you may publicly display copies.
-
-
-\section*{\noun{3. Copying in quantity}}
-
-If you publish printed copies (or copies in media that commonly have
-printed covers) of the Document, numbering more than 100, and the
-Document's license notice requires Cover Texts, you must enclose the
-copies in covers that carry, clearly and legibly, all these Cover
-Texts: Front-Cover Texts on the front cover, and Back-Cover Texts
-on the back cover. Both covers must also clearly and legibly identify
-you as the publisher of these copies. The front cover must present
-the full title with all words of the title equally prominent and visible.
-You may add other material on the covers in addition. Copying with
-changes limited to the covers, as long as they preserve the title
-of the Document and satisfy these conditions, can be treated as verbatim
-copying in other respects.
-
-If the required texts for either cover are too voluminous to fit legibly,
-you should put the first ones listed (as many as fit reasonably) on
-the actual cover, and continue the rest onto adjacent pages.
-
-If you publish or distribute Opaque copies of the Document numbering
-more than 100, you must either include a machine-readable Transparent
-copy along with each Opaque copy, or state in or with each Opaque
-copy a computer-network location from which the general network-using
-public has access to download using public-standard network protocols
-a complete Transparent copy of the Document, free of added material.
-If you use the latter option, you must take reasonably prudent steps,
-when you begin distribution of Opaque copies in quantity, to ensure
-that this Transparent copy will remain thus accessible at the stated
-location until at least one year after the last time you distribute
-an Opaque copy (directly or through your agents or retailers) of that
-edition to the public.
-
-It is requested, but not required, that you contact the authors of
-the Document well before redistributing any large number of copies,
-to give them a chance to provide you with an updated version of the
-Document.
-
-
-\section*{\noun{4. Modifications}}
-
-You may copy and distribute a Modified Version of the Document under
-the conditions of sections 2 and 3 above, provided that you release
-the Modified Version under precisely this License, with the Modified
-Version filling the role of the Document, thus licensing distribution
-and modification of the Modified Version to whoever possesses a copy
-of it. In addition, you must do these things in the Modified Version:
-\begin{description}
-\item [{A.\hspace*{3.2mm}}] Use in the Title Page (and on the covers,
-if any) a title distinct from that of the Document, and from those
-of previous versions (which should, if there were any, be listed in
-the History section of the Document). You may use the same title as
-a previous version if the original publisher of that version gives
-permission.
-\item [{B.\hspace*{3.4mm}}] List on the Title Page, as authors, one or
-more persons or entities responsible for authorship of the modifications
-in the Modified Version, together with at least five of the principal
-authors of the Document (all of its principal authors, if it has fewer
-than five), unless they release you from this requirement.
-\item [{C.\hspace*{3.4mm}}] State on the Title page the name of the publisher
-of the Modified Version, as the publisher.
-\item [{D.\hspace*{3.4mm}}] Preserve all the copyright notices of the
-Document.
-\item [{E.\hspace*{3.4mm}}] Add an appropriate copyright notice for your
-modifications adjacent to the other copyright notices.
-\item [{F.\hspace*{3.8mm}}] Include, immediately after the copyright notices,
-a license notice giving the public permission to use the Modified
-Version under the terms of this License, in the form shown in the
-Addendum below.
-\item [{G.\hspace*{3.1mm}}] Preserve in that license notice the full lists
-of Invariant Sections and required Cover Texts given in the Document's
-license notice.
-\item [{H.\hspace*{3.2mm}}] Include an unaltered copy of this License.
-\item [{I.\hspace*{5.0mm}}] Preserve the section Entitled “History”, Preserve
-its Title, and add to it an item stating at least the title, year,
-new authors, and publisher of the Modified Version as given on the
-Title Page. If there is no section Entitled “History” in the Document,
-create one stating the title, year, authors, and publisher of the
-Document as given on its Title Page, then add an item describing the
-Modified Version as stated in the previous sentence.
-\item [{J.\hspace*{4.3mm}}] Preserve the network location, if any, given
-in the Document for public access to a Transparent copy of the Document,
-and likewise the network locations given in the Document for previous
-versions it was based on. These may be placed in the “History” section.
-You may omit a network location for a work that was published at least
-four years before the Document itself, or if the original publisher
-of the version it refers to gives permission.
-\item [{K.\hspace*{3.3mm}}] For any section Entitled “Acknowledgements”
-or “Dedications”, Preserve the Title of the section, and preserve
-in the section all the substance and tone of each of the contributor
-acknowledgements and/or dedications given therein.
-\item [{L.\hspace*{4.1mm}}] Preserve all the Invariant Sections of the
-Document, unaltered in their text and in their titles. Section numbers
-or the equivalent are not considered part of the section titles.
-\item [{M.\hspace*{3mm}}] Delete any section Entitled “Endorsements”.
-Such a section may not be included in the Modified Version.
-\item [{N.\hspace*{3.4mm}}] Do not retitle any existing section to be
-Entitled “Endorsements” or to conflict in title with any Invariant
-Section.
-\item [{O.\hspace*{3.4mm}}] Preserve any Warranty Disclaimers.
-\end{description}
-If the Modified Version includes new front-matter sections or appendices
-that qualify as Secondary Sections and contain no material copied
-from the Document, you may at your option designate some or all of
-these sections as invariant. To do this, add their titles to the list
-of Invariant Sections in the Modified Version's license notice. These
-titles must be distinct from any other section titles.
-
-You may add a section Entitled “Endorsements”, provided it contains
-nothing but endorsements of your Modified Version by various parties—for
-example, statements of peer review or that the text has been approved
-by an organization as the authoritative definition of a standard.
-
-You may add a passage of up to five words as a Front-Cover Text, and
-a passage of up to 25 words as a Back-Cover Text, to the end of the
-list of Cover Texts in the Modified Version. Only one passage of Front-Cover
-Text and one of Back-Cover Text may be added by (or through arrangements
-made by) any one entity. If the Document already includes a cover
-text for the same cover, previously added by you or by arrangement
-made by the same entity you are acting on behalf of, you may not add
-another; but you may replace the old one, on explicit permission from
-the previous publisher that added the old one.
-
-The author(s) and publisher(s) of the Document do not by this License
-give permission to use their names for publicity for or to assert
-or imply endorsement of any Modified Version.
-
-
-\section*{\noun{5. Combining documents}}
-
-You may combine the Document with other documents released under this
-License, under the terms defined in section 4 above for modified versions,
-provided that you include in the combination all of the Invariant
-Sections of all of the original documents, unmodified, and list them
-all as Invariant Sections of your combined work in its license notice,
-and that you preserve all their Warranty Disclaimers.
-
-The combined work need only contain one copy of this License, and
-multiple identical Invariant Sections may be replaced with a single
-copy. If there are multiple Invariant Sections with the same name
-but different contents, make the title of each such section unique
-by adding at the end of it, in parentheses, the name of the original
-author or publisher of that section if known, or else a unique number.
-Make the same adjustment to the section titles in the list of Invariant
-Sections in the license notice of the combined work.
-
-In the combination, you must combine any sections Entitled “History”
-in the various original documents, forming one section Entitled “History”;
-likewise combine any sections Entitled “Acknowledgements”, and any
-sections Entitled “Dedications”. You must delete all sections Entitled
-“Endorsements”.
-
-
-\section*{\noun{6. Collections of documents}}
-
-You may make a collection consisting of the Document and other documents
-released under this License, and replace the individual copies of
-this License in the various documents with a single copy that is included
-in the collection, provided that you follow the rules of this License
-for verbatim copying of each of the documents in all other respects.
-
-You may extract a single document from such a collection, and distribute
-it individually under this License, provided you insert a copy of
-this License into the extracted document, and follow this License
-in all other respects regarding verbatim copying of that document.
-
-
-\section*{\noun{7. Aggregation with independent works}}
-
-A compilation of the Document or its derivatives with other separate
-and independent documents or works, in or on a volume of a storage
-or distribution medium, is called an “aggregate” if the copyright
-resulting from the compilation is not used to limit the legal rights
-of the compilation's users beyond what the individual works permit.
-When the Document is included in an aggregate, this License does not
-apply to the other works in the aggregate which are not themselves
-derivative works of the Document.
-
-If the Cover Text requirement of section 3 is applicable to these
-copies of the Document, then if the Document is less than one half
-of the entire aggregate, the Document's Cover Texts may be placed
-on covers that bracket the Document within the aggregate, or the electronic
-equivalent of covers if the Document is in electronic form. Otherwise
-they must appear on printed covers that bracket the whole aggregate.
-
-
-\section*{\noun{8. Translation}}
-
-Translation is considered a kind of modification, so you may distribute
-translations of the Document under the terms of section 4. Replacing
-Invariant Sections with translations requires special permission from
-their copyright holders, but you may include translations of some
-or all Invariant Sections in addition to the original versions of
-these Invariant Sections. You may include a translation of this License,
-and all the license notices in the Document, and any Warranty Disclaimers,
-provided that you also include the original English version of this
-License and the original versions of those notices and disclaimers.
-In case of a disagreement between the translation and the original
-version of this License or a notice or disclaimer, the original version
-will prevail.
-
-If a section in the Document is Entitled “Acknowledgements”, “Dedications”,
-or “History”, the requirement (section 4) to Preserve its Title (section
-1) will typically require changing the actual title.
-
-
-\section*{\noun{9. Termination}}
-
-You may not copy, modify, sublicense, or distribute the Document except
-as expressly provided under this License. Any attempt otherwise to
-copy, modify, sublicense, or distribute it is void, and will automatically
-terminate your rights under this License.
-
-However, if you cease all violation of this License, then your license
-from a particular copyright holder is reinstated (a) provisionally,
-unless and until the copyright holder explicitly and finally terminates
-your license, and (b) permanently, if the copyright holder fails to
-notify you of the violation by some reasonable means prior to 60 days
-after the cessation.
-
-Moreover, your license from a particular copyright holder is reinstated
-permanently if the copyright holder notifies you of the violation
-by some reasonable means, this is the first time you have received
-notice of violation of this License (for any work) from that copyright
-holder, and you cure the violation prior to 30 days after your receipt
-of the notice.
-
-Termination of your rights under this section does not terminate the
-licenses of parties who have received copies or rights from you under
-this License. If your rights have been terminated and not permanently
-reinstated, receipt of a copy of some or all of the same material
-does not give you any rights to use it.
-
-
-\section*{\noun{10. Future revisions of this license}}
-
-The Free Software Foundation may publish new, revised versions of
-the GNU Free Documentation License from time to time. Such new versions
-will be similar in spirit to the present version, but may differ in
-detail to address new problems or concerns. See \url{https://www.gnu.org/copyleft/}.
-
-Each version of the License is given a distinguishing version number.
-If the Document specifies that a particular numbered version of this
-License \textquotedbl{}or any later version\textquotedbl{} applies
-to it, you have the option of following the terms and conditions either
-of that specified version or of any later version that has been published
-(not as a draft) by the Free Software Foundation. If the Document
-does not specify a version number of this License, you may choose
-any version ever published (not as a draft) by the Free Software Foundation.
-If the Document specifies that a proxy can decide which future versions
-of this License can be used, that proxy's public statement of acceptance
-of a version permanently authorizes you to choose that version for
-the Document.
-
-
-\section*{\noun{11. Relicensing}}
-
-“Massive Multiauthor Collaboration Site” (or “MMC Site”) means any
-World Wide Web server that publishes copyrightable works and also
-provides prominent facilities for anybody to edit those works. A public
-wiki that anybody can edit is an example of such a server. A “Massive
-Multiauthor Collaboration” (or “MMC”) contained in the site means
-any set of copyrightable works thus published on the MMC site.
-
-“CC-BY-SA” means the Creative Commons Attribution-Share Alike 3.0
-license published by Creative Commons Corporation, a not-for-profit
-corporation with a principal place of business in San Francisco, California,
-as well as future copyleft versions of that license published by that
-same organization.
-
-“Incorporate” means to publish or republish a Document, in whole or
-in part, as part of another Document.
-
-An MMC is “eligible for relicensing” if it is licensed under this
-License, and if all works that were first published under this License
-somewhere other than this MMC, and subsequently incorporated in whole
-or in part into the MMC, (1) had no cover texts or invariant sections,
-and (2) were thus incorporated prior to November 1, 2008.
-
-The operator of an MMC Site may republish an MMC contained in the
-site under CC-BY-SA on the same site at any time before August 1,
-2009, provided the MMC is eligible for relicensing.
-
-
-\section*{\noun{Addendum}: How to use this License for your documents}
-
-To use this License in a document you have written, include a copy
-of the License in the document and put the following copyright and
-license notices just after the title page:
-\begin{quote}
-Copyright © YEAR YOUR NAME.\\
-Permission is granted to copy, distribute and/or modify this document
-under the terms of the GNU Free Documentation License, Version 1.3
-or any later version published by the Free Software Foundation;
-
-with no Invariant Sections, no Front-Cover Texts, and no Back-Cover
-Texts.
-
-A copy of the license is included in the section entitled \textquotedbl{}GNU
-Free Documentation License\textquotedbl{}.
-\end{quote}
-If you have Invariant Sections, Front-Cover Texts and Back-Cover Texts,
-replace the \textquotedbl{}with $\ldots$ Texts.\textquotedbl{} line
-with this:
-\begin{quote}
-with the Invariant Sections being LIST THEIR TITLES, with the Front-Cover
-Texts being LIST, and with the Back-Cover Texts being LIST.
-\end{quote}
-If you have Invariant Sections without Cover Texts, or some other
-combination of the three, merge those two alternatives to suit the
-situation.
-
-If your document contains nontrivial examples of program code, we
-recommend releasing these examples in parallel under your choice of
-free software license, such as the GNU General Public License, to
-permit their use in free software.
 
 \label{END}
 \end{document}
